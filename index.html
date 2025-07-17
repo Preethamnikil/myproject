@@ -1,0 +1,344 @@
+<!-- Grid application -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Bomma</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="mybomma.css"/>
+    <style>
+        /* defining styles for my bomma app */
+body{
+  background:#111;
+  padding:0px;
+  margin:0px;  
+}
+/* header styles */
+.header{
+  background:#222;
+  padding:20px 0 20px 60px;
+  margin-bottom:5%;  
+}
+.header img{
+  width:200px;
+  height:70px;  
+}
+
+/* slogon styles */
+.slogon{
+  color:#FFF;
+  text-align:center;  
+  margin-bottom:5%;
+}
+.slogon div:first-child{
+  font-size:3rem;	
+  font-family:'Bauhaus 93';
+}
+.slogon div:first-child::first-letter{
+  background:yellow;
+  color:#000;
+  padding:3px 8px;
+}
+.slogon div:last-child{
+  font-size:20px;	
+}
+
+/* footer styles */
+.footer{
+  background:#222;
+  color:#FFF;
+  padding:25px; 
+  display:flex;
+  justify-content:space-between;
+}
+
+/* search box styles */
+.search-box{
+  background:#222;
+  color:#FFF;
+  margin-bottom:5%;
+  padding:30px;
+  text-align:center;
+}
+.search-box div:nth-child(2){
+  font-size:20px;
+  margin-bottom:30px;
+}	
+.search{
+  background:yellow;
+  display:inline-block;
+  border-radius:15px;
+  padding-right:15px;
+}
+.search input{
+  font-size:18px;
+  border:none;
+  outline:none;  
+  background:#222;
+  color:#FFF;
+}
+
+/* grid styles */
+.grid-box{
+  display:grid;		/* NR x 1C */
+  /*
+    grid-template-columns:300px 500px 300px; OR
+    grid-template-columns:20% 30% 40%;  
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));	
+	grid-template-rows:360px 360px 360px 360px;
+	/* column-gap:25px;
+	row-gap:20px; */
+	grid-gap:15px;
+    width:90%;
+	margin:auto;
+	margin-bottom:5%;
+}
+.grid-box img{
+  width:100%;
+  height:320px;
+}
+.grid-box a{
+  color:#FFF;
+  text-decoration:none;  
+  font-size:120%;
+}
+.grid-box a:hover{
+  color:yellow;	
+}
+.grid-item div:last-child{
+  color:yellow;	
+}
+    </style>
+  </head>
+  <body>
+	<!-- header section -->
+	<header class="header">
+	  <img src="images/logo.png" alt="My Bomma">
+	</header>
+	
+	<!-- slogon section -->
+	<article class="slogon">
+	  <div>b for... bappam.dev</div>
+	  <div>Watch Telugu movies in HD, exclusively available on BAPPAM.DEV<br>Designed and Developed for bappam batch</div>
+	</article>
+	
+	<!-- grid box -->
+	<main class="grid-box">
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/air.jpg" alt="AIR"> 
+		</div>
+		<div>
+		  <a href="https://rsc.bappam.gift/bo-v1tvo/Air-2025-GXXB-telugu-movie-watch-online.html">AIR</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/uppu kappurambu.jpg" alt="uppu kappurambu"> 
+		</div>
+		<div>
+		  <a href="">Uppu Kappurambu</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/thuglife.jpg" alt="Thuglife"> 
+		</div>
+		<div>
+		  <a href="">Thug Life</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/3bhk.jpg" alt="3bhk"> 
+		</div>
+		<div>
+		  <a href="">3BHK</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/100.jpg" alt="100"> 
+		</div>
+		<div>
+		  <a href="">100</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/sri.jpg" alt="sri"> 
+		</div>
+		<div>
+		  <a href="">Sri</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/the hunt.jpg" alt="the hunt"> 
+		</div>
+		<div>
+		  <a href="">The Hunt</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/santhosham.jpg" alt="santhosham"> 
+		</div>
+		<div>
+		  <a href="">Santhosham</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/Pechi.jpg" alt="Pechi"> 
+		</div>
+		<div>
+		  <a href="">Pechi</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/pattaapakal.jpg" alt="pattaapakal"> 
+		</div>
+		<div>
+		  <a href="">Pattaapakal</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/narivetta.jpg" alt="narivetta"> 
+		</div>
+		<div>
+		  <a href="">Narivetta</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/moonwalk.jpg" alt="moonwalk"> 
+		</div>
+		<div>
+		  <a href="">moonwalk</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/maargan.jpg" alt="maargan"> 
+		</div>
+		<div>
+		  <a href="">Maargan</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/kubhera.jpg" alt="kubhera"> 
+		</div>
+		<div>
+		  <a href="https://rsc.bappam.gift/bo-v1tvo/Air-2025-GXXB-telugu-movie-watch-online.html">Kubhera</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/kaliyugam.jpg" alt="kaliyugam"> 
+		</div>
+		<div>
+		  <a href="">kaliyugam</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/housefull.jpg" alt="housefull"> 
+		</div>
+		<div>
+		  <a href="">Housefull</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/good wife.jpg" alt="good wife"> 
+		</div>
+		<div>
+		  <a href="">Good Wife</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/aap jaisa koi.jpg" alt="aap jaisa koi"> 
+		</div>
+		<div>
+		  <a href="">Aap Jaisa Koi</a>
+		</div>
+		<div>2025</div>		
+	  </section>
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/firefly.jpg" alt="firefly"> 
+		</div>
+		<div>
+		  <a href="">Firefly</a>
+		</div>
+		<div>2025</div>		
+	  </section> 	  
+	  <!-- grid items -->
+	  <section class="grid-item">
+	    <div> 
+		  <img src="images/6jouerny.jpg" alt="6jouerny"> 
+		</div>
+		<div>
+		  <a href="">6Jouerny</a>
+		</div>
+		<div>2025</div>		
+	  </section>	
+	</main>
+	
+	<!-- search box -->
+	<section class="search-box">
+	  <h2>Looking For More Movies? Use Our Search</h2>
+	  <div>Thousands of movies in our database & still adding</div>
+	  <div class="search">
+		<input type="text" placeholder="Search movie..."> 🔍
+	  </div>
+	</section>
+	
+	<!-- footer section -->
+	<footer class="footer">
+	  <div>Contact | DMCA | T&C</div>
+	  <div>&copy; 2025 BAPPAM</div>	  
+	</footer>
+  </body>
+</html>
